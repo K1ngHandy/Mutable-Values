@@ -57,17 +57,14 @@
                It has changed because arrays are mutable.
     */
       /* 
-    PROBLEM 5: Let's take another look at the first problem but we'll call it newStr this time.
-               We want to capitalize the word "hello" so that it reads "Hello World!"
-               How can we do this?
-               
-               let newStr = 'hello World!';
-               newStr = 'Hello World!'; // reassigning the value of newStr to a new string
-               console.log(newStr); // output: "Hello World!"
-
-               Did you get it changed?
-               Keep in mind that we didn't change the original string but replaced it instead.
+    PROBLEM 5 (DEBUGGING): We want to do a strict comparison between two variables. 
+              The following code is supposed to console log the boolean false, since one is a string and the other is a number so their types are different.
+              However, it is not working correctly.  Please fix the code so that it works, logging false instead of true.
     */
+      let myStr = "5";
+      let myNum = 5;
+      let strictCompare = myStr === myNum; // changed from == to === to do a strict comparison instead of a loose comparison
+      console.log(strictCompare); // output: false
     </script>
   </body>
 </html>

@@ -44,13 +44,14 @@
    arr.push(); // add a 4 to the array
    //ENTER YOUR CONSOLE LOG HERE
     /* 
-    PROBLEM 5 (DEBUGGING): Let's take another look at the first problem but we'll call it newStr this time.
-               We want to capitalize the word "hello" so that it reads "Hello World!"
-               How can we do this?
+    PROBLEM 5 (DEBUGGING): We want to do a strict comparison between two variables. 
+              The following code is supposed to console log the boolean false, since one is a string and the other is a number so their types are different.
+              However, it is not working correctly.  Please fix the code so that it works, logging false instead of true.
     */
-               let newStr = 'hello World!';
-               newStr[0] = 'H';
-               console.log(newStr);
+    let myStr = "5";
+    let myNum = 5;
+    let strictCompare = myStr == myNum;
+    console.log(strictCompare);
 
     
     
