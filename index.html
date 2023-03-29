@@ -7,28 +7,51 @@
   </p>
   <script>
     /* 
-    PROBLEM 1: 
+    PROBLEM 1: Create a variable named str and set it equal to the string "hello"
+               Next use bracket notation to try to mutate the string like this:
+                str[0] = 'H';
+               Now console log the variable str to see if it has changed
+               Did the variable change? Why do you think that is?
     */
     //ENTER YOUR CODE HERE
      
     /* 
-    PROBLEM 2: 
+    PROBLEM 2: Create a variable named num and set it equal to the number 5
+               Next use += to add three to the num variable like this:
+                num += 3;
+               Now console log the variable num to see if it has changed
+               Did the variable change? Why?
     */
     //ENTER YOUR CODE HERE
     
      /* 
-    PROBLEM 3: 
+    PROBLEM 3: Here is an object named obj containing a car called a "Honda" and owned by someone named "John".
+               On the second line, use the right side of the equal sign to change the owner's name to "Tony"
+               Now console log obj to see if it has changed.
+               Did the object change? Why?
     */
-    //ENTER YOUR CODE HERE
+    let obj = { owner: "John", car: "Honda" };
+    obj.owner = "" //change name here
+    //ENTER YOUR CONSOLE LOG HERE
 
     /* 
-    PROBLEM 4: 
+    PROBLEM 4: Here is an array named arr containing an array of numbers.
+               On the second line, inside the parenthesies, add the number 4.
+               Now console log arr to see if it has changed
+               Did the array change? Why?
     */
-    //ENTER YOUR CODE HERE
-
+   let arr = [1, 2, 3];
+   arr.push(); // add a 4 to the array
+   //ENTER YOUR CONSOLE LOG HERE
     /* 
-    PROBLEM 5 (DEBUGGING): 
+    PROBLEM 5 (DEBUGGING): In the following snippet, we want to change the punctuation at the end of the string. 
+              We're trying to directly modify the string, but like in our first problem, it's not working.
+              Fix the code so that the string is changed to "Welcome to Bloomtech!"
+              Hint: You'll need to completely replace the second line of code so that it changes the string referenced by the variable rather than trying to mutate the current string value.
     */
+              let message = 'Welcome to Bloomtech?';
+              message[20] = '!';
+              console.log(message);
     
   </script> 
   <section style="border: 2px solid blue; border-radius: 5px; padding: 10px; box-shadow: 5px 3px 3px orange; margin-top: 20px;">
