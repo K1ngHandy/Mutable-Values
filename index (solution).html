@@ -17,7 +17,7 @@
                
                Did the variable change? Why do you think that is?
                It did not change. Strings in JavaScript are immutable, 
-               meaning that their values cannot be changed once they have been created.
+               meaning that their values cannot be changed once they have been created. Instead, we have to create a new string and assign it to the variable.
     */
       /* 
     PROBLEM 2: Create a variable named num and set it equal to the number 5
@@ -57,14 +57,15 @@
                It has changed because arrays are mutable.
     */
       /* 
-    PROBLEM 5 (DEBUGGING): We want to do a strict comparison between two variables. 
-              The following code is supposed to console log the boolean false, since one is a string and the other is a number so their types are different.
-              However, it is not working correctly.  Please fix the code so that it works, logging false instead of true.
+    PROBLEM 5 (DEBUGGING): In the following snippet, we want to change the punctuation. 
+              We're trying to directly modify the string, but like in our first problem, it's not working.
+              Fix the code so that the string is changed to "Welcome to Bloomtech!"
+              Hint: You'll need to completely replace the second line of code so that it changes the string referenced by the variable rather than trying to mutate the current string value.
+
+              let message = 'Welcome to Bloomtech?';
+              message = "Welcome to Bloomtech!"; // replace the string that message is referencing
+              console.log(message); // output: "Welcome to Bloomtech!"
     */
-      let myStr = "5";
-      let myNum = 5;
-      let strictCompare = myStr === myNum; // changed from == to === to do a strict comparison instead of a loose comparison
-      console.log(strictCompare); // output: false
     </script>
   </body>
 </html>
