@@ -13,7 +13,9 @@
                Now console log the variable str to see if it has changed
                Did the variable change? Why do you think that is?
     */
-    //ENTER YOUR CODE HERE
+    let str = 'hello';
+    str[0] = 'H';
+    console.log(str); // no change
      
     /* 
     PROBLEM 2: Create a variable named num and set it equal to the number 5
@@ -22,7 +24,9 @@
                Now console log the variable num to see if it has changed
                Did the variable change? Why?
     */
-    //ENTER YOUR CODE HERE
+    let num = 5;
+    num += 3;
+    console.log(num); // 8
     
      /* 
     PROBLEM 3: Here is an object named obj containing a car called a "Honda" and owned by someone named "John".
@@ -31,25 +35,27 @@
                Did the object change? Why?
     */
     let obj = { owner: "John", car: "Honda" };
-    //ENTER YOUR CONSOLE LOG HERE
+    obj.owner = 'Tony';
+    console.log(obj); // changed to 'Tony', mutable
 
     /* 
     PROBLEM 4: Here is an array named arr containing an array of numbers.
-               On the second line, inside the parenthesies, add the number 4.
+               On the second line, inside the parentheses, add the number 4.
                Now console log arr to see if it has changed
                Did the array change? Why?
     */
-   let arr = [1, 2, 3];
-   //ENTER YOUR CONSOLE LOG HERE
+    let arr = [1, 2, 3];
+    arr.push(4);
+    console.log(arr); // [1, 2, 3, 4], mutable
     
     /* 
     PROBLEM 5 (DEBUGGING): In the following snippet, we want to change the punctuation at the end of the string. 
               We're trying to directly modify the string, but like in our first problem, it's not working.
               Fix the code so that the string is changed to "Welcome to Bloomtech!"
     */
-//               let message = 'Welcome to Bloomtech?';
-//               message[20] = '!';
-//               console.log(message);
+              let message = 'Welcome to Bloomtech?';
+              message = 'Welcome to Bloomtech!'; // reassign; strings are immutable
+              console.log(message);
     
   </script> 
   <section style="border: 2px solid blue; border-radius: 5px; padding: 10px; box-shadow: 5px 3px 3px orange; margin-top: 20px;">
